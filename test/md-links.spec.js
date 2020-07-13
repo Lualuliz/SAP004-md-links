@@ -1,24 +1,20 @@
-const mdLinks = require('../index.js')    
+const mdLinks = require("../index.js");
 
 describe("mdLinks", () => {
-  it("is a function", () =>  expect(typeof mdLinks).toBe("function"));
+  it("is a function", () => expect(typeof mdLinks).toBe("function"));
 
-it("returns href and text", (done) => {
-   return mdLinks('./README.md').then(result => {
-       expect(result).toBe(result)
-       done()
-   });
-});
+  it("returns href and text", (done) => {
+    return mdLinks("./README.md").then((result) => {
+      expect(result).toBe(result);
+      done();
+    });
+  });
 
-it("return erro no arquivo", (done) => 
-{
-    return mdLinks('./READM.md').catch(e => 
-      { 
-        expect(e).toBe(e);
-    done();
-      });
-});
-
-
+  it("return erro no arquivo", (done) => {
+    return mdLinks("./READM.md").catch((e) => {
+      expect(e).toBe(e);
+      done();
+    });
+  });
 });
 

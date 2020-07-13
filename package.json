@@ -2,7 +2,7 @@
   "name": "md-links",
   "version": "0.1.0",
   "description": "## Índice",
-  "main": "index.js",
+  "main": "cli.js",
   "directories": {
     "test": "test"
   },
@@ -23,6 +23,9 @@
     "url": "https://github.com/Lualuliz/SAP004-md-links/issues"
   },
   "homepage": "https://github.com/Lualuliz/SAP004-md-links#readme",
+  "bin": {
+    "md-links": "cli.js"
+  },
   "devDependencies": {
     "jest": "^26.1.0"
   }
