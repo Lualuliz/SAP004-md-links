@@ -4,7 +4,7 @@ describe("mdLinks", () => {
   it("is a function", () => expect(typeof mdLinks).toBe("function"));
 
   it("returns href and text", (done) => {
-    return mdLinks("./README.md").then((result) => {
+    return mdLinks("./TESTE.md").then((result) => {
       expect(result).toBe(result);
       done();
     });
